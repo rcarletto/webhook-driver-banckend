@@ -2,15 +2,13 @@ const express = require('express');
 const app = express();
 const morgan = require('morgan');
 
-const rotaProdutos = require('./routes/produtos');
-const rotaPedidos = require('./routes/pedidos');
+const rotaProdutos = require('./routes/produtos');  
 const rotaMensagens = require('./routes/mensagens');
 
 
 
 app.use(morgan('dev'));
 app.use('/produtos', rotaProdutos);
-app.use('/pedidos', rotaPedidos);
 app.use('/mensagens', rotaMensagens);
 
 app.use((req, res, next) => {
