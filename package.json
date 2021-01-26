@@ -10,6 +10,7 @@
   "author": "Carletto",
   "license": "ISC",
   "dependencies": {
+    "aws-sdk": "^2.831.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "morgan": "^1.10.0"

@@ -14,6 +14,7 @@ app.use(morgan("dev"));
 app.use("/produtos", rotaProdutos);
 app.use("/mensagens", rotaMensagens);
 
+//rota invalida
 app.use((req, res, next) => {
   const erro = new Error("invalid path");
   erro.status = 404;
